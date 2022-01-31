@@ -4,3 +4,17 @@
     width: 380px;
     margin-left: 15%;
 }
+
+.animated {
+    animation: upTop 1s;
+    animation-direction: linear;
+}
+
+@keyframes upTop {
+    0%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
