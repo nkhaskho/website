@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { EmailForm } from 'src/app/models/email-form';
+import { EmailService } from 'src/app/services/email.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  emailForm: EmailForm = new EmailForm();
+  errorMessage: string = "";
+
+  constructor(private emailService: EmailService) { }
 
   ngOnInit(): void {
+  }
+
+  send() {
+    if (this.emailForm.isValid()) {
+      this.emailService.sendEmail(this.emailForm);
+      this.errorMessage = "1"
+    } else {
+      this.errorMessage = this.emailForm.validate();
+    }
   }
 
 }

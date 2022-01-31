@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  emailEndpoint: "https://formspree.io/f/mjvlyypg"
 };
