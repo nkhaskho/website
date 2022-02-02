@@ -10,9 +10,9 @@ export class ServicesComponent implements OnInit {
 
   services: Service[] = [
     {
-      name: "API Management",
+      name: "Service 1",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      cover: "assets/images/apigee.png",
+      cover: "assets/images/400x400.png",
       tasks: [
         "Build and scale API programs with full API life cycle capabilities",
         "Drive consumption of APIs with flexible developer portal options",
@@ -21,9 +21,9 @@ export class ServicesComponent implements OnInit {
       ]
     },
     {
-      name: "Software Craftmanship",
+      name: "Service 2",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      cover: "assets/images/software.png",
+      cover: "assets/images/400x400.png",
       tasks: [
         "Intervention sur toutes les phases de vos projets autour des technologies .NET et JEE",
         "Création et maintenance de sites Web selon les nouvelles tendances (responsive, one-page)",
@@ -31,9 +31,9 @@ export class ServicesComponent implements OnInit {
       ]
     },
     {
-      name: "Cloud and DevOps",
+      name: "Service 3",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      cover: "assets/images/devops.png",
+      cover: "assets/images/400x400.png",
       tasks: [
         "Build and scale API programs with full API life cycle capabilities",
         "Drive consumption of APIs with flexible developer portal options",

@@ -12,7 +12,7 @@ export class EmailService {
 
   sendEmail(emailForm: EmailForm) {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    this.httpClient.post(environment.emailEndpoint, emailForm)
+    this.httpClient.post(environment.emailEndpoint, emailForm, { headers: headers });
   }
 
 }
